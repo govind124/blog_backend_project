@@ -11,7 +11,7 @@ const Hollywood = () => {
 
     useEffect(()=>{
       const getData=async()=>{
-          const data=await axios.get('http://localhost:8000/');
+          const data=await axios.get('https://blog-backend-server-node.herokuapp.com/api/bolly');
           setDetail(data.data);
       }
       getData();
